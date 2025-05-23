@@ -17,7 +17,7 @@
 
 nav a {
   text-decoration: none;
-  color: var(--font-light);
+  /* color: var(--font-light); */
   margin-right: 1.5rem;
   font-size: 1.1rem;
   transition: color 0.2s;
