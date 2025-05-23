@@ -1,0 +1,63 @@
+@import './variables.css';
+/* @import "tailwindcss";  */
+
+/* ====================
+   NAVBAR STYLES
+==================== */
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--primary-dark);
+  color: var(--font-light);
+  border-color: var(--accent-color);
+  position: relative;
+} */
+
+nav a {
+  text-decoration: none;
+  color: var(--font-light);
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* ====================
+   BUTTON STYLES
+==================== */
+button,
+.dropbtn {
+  font-family: "Quicksand", sans-serif;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: var(--font-light);
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+  margin-right: 1.5rem;
+}
+
+button:hover,
+button:hover a {
+  background-color: var(--text-color);
+  color: var(--accent-color);
+  animation: jiggle 0.5s ease-in-out;
+}
+
+/* ====================
+   JIGGLE ANIMATION
+==================== */
+@keyframes jiggle {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-1.5px); }
+  40%  { transform: translateX(1.5px); }
+  60%  { transform: translateX(-1px); }
+  80%  { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+
